@@ -1,0 +1,45 @@
+import React from 'react';
+import { Card, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+
+function HomeSide(props) {
+    // console.log(props.BlogData);
+    return (
+        <div className="sideContainer">
+            <Card className="sideCard" style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={props.InfoBurg.image} />
+                <Card.Body>
+                    <Card.Title>{props.InfoBurg.title}</Card.Title>
+                    <Card.Text>
+                        <p>{props.InfoBurg.description}</p>
+                    </Card.Text>
+                    <Button variant="primary"><Link to={props.InfoBurg.link}>See Recipe</Link></Button>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>{props.BlogData.title}</Card.Title>
+                    <Card.Text>
+                    
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>{props.BlogData.author}</Card.Title> // author
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+        </div>
+    )
+}
+
+export default HomeSide

@@ -1,0 +1,148 @@
+
+
+.header img {
+    width: 100vw;
+}
+// makes navBar stick to top but sets it behind everything below it when scrolling.
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    opacity: .9;
+    width: 100%;
+    z-index: 10;
+}
+.nav Container {
+    justify-content: center;
+    // position: sticky;
+}
+.appbar {
+    width: 100%;
+    // position: sticky;
+}
+
+.appContainer {
+    display: flex;
+    
+    margin: auto;
+    width: 80%;
+    // align-content: center;
+}
+
+// .colorBar {
+//     background-color: gray;
+//     width: 100%;
+// } 
+.body {
+    margin: auto;
+    margin-top: 50;
+    margin-left: center;
+    width: 70%;
+    height: 800px;
+    justify-content: center;
+    // display: flex;
+    // border: solid black 1px;
+  }
+
+.asideContainer {
+    width: 25%;
+    height: 1400px;
+    border: solid black 1px;
+    justify-content: center;
+}
+
+.sideContainer {
+    margin: 10, 0;
+
+    border: solid rgb(170, 19, 19) 1px;
+}
+
+
+// Card Styles
+$radius: .5rem;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.head {
+    display: flex;
+    justify-content: start;
+}
+
+.wrapper {
+    margin: 5rem;
+    min-width: 27px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    border: solid red 1px;
+    flex-direction: row;
+}
+
+
+.card {
+    // box-shadow: 0 0 10px 5px lightgray;
+    position: relative;
+    border-radius: $radius;
+    min-width: 28rem;
+    max-height: 28rem;
+    display: flex;
+    // flex-direction: column;
+    // margin: auto;
+    grid-template-rows: 1fr;
+    // border: solid hotpink 10px;
+    // grid-template-columns: .25fr, .75fr;
+
+
+    &__img {
+        width: 14rem;
+        height: 14rem;
+        object-fit: cover;
+        border-radius: $radius;
+        border: solid red 1px;
+        display: flex;
+        // margin-left: 8rem;
+        // flex-direction: row;
+        // border: solid rgb(160, 157, 157) 1px;
+        // grid-column: .4fr;
+
+    }
+    &__body {
+        display: flex;
+        margin: 0;
+        min-width: 14rem;
+        flex-grow: 1;
+        border: solid rgb(43, 160, 238) 1px;
+        align-items: center;
+        // flex-direction: row;
+    }
+    &__title {
+        line-height: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    &__description {
+        line-height: 1.2rem;
+    }
+    &__btn {
+        border: none;
+        border-top: 1px solid gray;
+        background-color: transparent;
+        // font-family:   ;
+        font-size: 1rem;
+        font-weight: bold;
+        color: inherit;
+        width: 100%;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            color: blue;
+            // background-color: lightcoral;
+        }
+    }
+}
