@@ -7,6 +7,8 @@ import BurgersBody from '../body/BurgersBody'
 
 // import InfoBurg from '../../RecipeData'
 import {BlogData, InfoBurg} from '../blogs/BlogData'
+import BlogSide from './BlogSide'
+import RecipeSide from './RecipeSide'
 
 function Aside() {
     // console.log(BlogData);
@@ -17,7 +19,7 @@ function Aside() {
                     <HomeSide InfoBurg={InfoBurg[0]} BlogData={BlogData[1]}/>
                 </Route>
                 <Route exact path='/blogs'>
-                    <HomeSide />
+                    <BlogSide InfoBurg={InfoBurg[0]} BlogData={BlogData[1]}/>
                 </Route>
                 <Route path='/Dreams'> {/* First Blog */}
                     <BurgersBody />    {/* BlogSide */}
@@ -32,13 +34,13 @@ function Aside() {
                     <BurgersBody/> {/* HomeSide */}
                 </Route>
                 <Route path='/poblano'>
-                    <BurgersBody /> {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
+                    <RecipeSide /> {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
                 </Route>
                 <Route path='/bacon'>
-                    <BurgersBody />  {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
+                    <RecipeSide />  {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
                 </Route>
                 <Route path='/brussel'>
-                    <BurgersBody />  {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
+                    <RecipeSide />  {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
                 </Route>
             </Switch>
         </div>

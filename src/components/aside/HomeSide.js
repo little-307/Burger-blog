@@ -7,17 +7,18 @@ function HomeSide(props) {
     // console.log(props.BlogData);
     return (
         <div className="sideContainer">
-            <Card className="sideCard" style={{ width: '18rem' }}>
+            <h2>Featured</h2>
+            <Card className="sideCard" style={{ width: '14rem' }}>
                 <Card.Img variant="top" src={props.InfoBurg.image} />
                 <Card.Body>
                     <Card.Title>{props.InfoBurg.title}</Card.Title>
                     <Card.Text>
                         <p>{props.InfoBurg.description}</p>
                     </Card.Text>
-                    <Button variant="primary"><Link to={props.InfoBurg.link}>See Recipe</Link></Button>
+                    <Button variant="warning"><Link to={props.InfoBurg.link}>See Recipe</Link></Button>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '14rem' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                     <Card.Title>{props.BlogData.title}</Card.Title>
@@ -27,10 +28,10 @@ function HomeSide(props) {
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '14rem' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
-                    <Card.Title>{props.BlogData.author}</Card.Title> // author
+                    <Card.Title>{props.BlogData.author}</Card.Title> 
                     <Card.Text>
                     Some quick PANCAKES text to build on the card title and make up the bulk of
                     the card's content.

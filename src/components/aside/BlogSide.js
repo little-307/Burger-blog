@@ -1,5 +1,6 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import {Card, Button} from 'react-bootstrap';
+
 
 function BlogSide() {
     return (
