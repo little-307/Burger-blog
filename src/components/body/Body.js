@@ -1,11 +1,12 @@
 import { Route, Switch } from 'react-router-dom';
 import HomeBody from './HomeBody';
 import BlogsBody from './BlogsBody';
+import BlogPost from './BlogPost';
 import BurgersBody from './BurgersBody';
 import AboutBody from './AboutBody';
 import ContactBody from './ContactBody';
 import RecipePage from './RecipePage';
-import {InfoBurg} from '../blogs/BlogData'
+import {BlogData, InfoBurg} from '../blogs/BlogData'
 // import Burger1 from './Burger1';
 // import Burger2 from './Burger2';
 // import Burger3 from './Burger3';
@@ -23,6 +24,15 @@ const Body = () => {
                 </Route>
                 <Route exact path='/blogs'>
                     <BlogsBody/>
+                </Route>
+                <Route path= '/Dreams'>
+                    <BlogPost BlogData={BlogData[0]}/>
+                </Route>
+                <Route path= '/Oliene'>
+                    <BlogPost BlogData={BlogData[1]}/>
+                </Route>
+                <Route path= '/Teddy'>
+                    <BlogPost BlogData={BlogData[2]}/>
                 </Route>
                 <Route exact path='/burgers'>
                     <BurgersBody/>

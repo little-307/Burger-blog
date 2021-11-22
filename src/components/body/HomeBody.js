@@ -3,6 +3,9 @@
  import Image from "../../../src/assets/Flower1.jpg"; 
  import Image2 from "../../../src/assets/Flower2.jpg";
  import Image3 from "../../../src/assets/FamLines1.jpg";
+ import C1 from "../../../src/assets/TedLogic.jpg";
+ import C2 from "../../../src/assets/TrampHead.jpg";
+ import C3 from "../../../src/assets/DreamsHead.jpg";
 //  import Cards from "./Cards";
  import { Card, Col, Row, } from 'react-bootstrap';
  import { Carousel } from 'react-bootstrap';
@@ -23,18 +26,18 @@ const HomeBody = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={Image}
+                    src={C1}
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
+                    <h3>maybe blank</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={Image2}
+                    src={C2}
                     alt="Second slide"
                     />
 
@@ -46,7 +49,7 @@ const HomeBody = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={Image3}
+                    src={C3}
                     alt="Third slide"
                     />
 

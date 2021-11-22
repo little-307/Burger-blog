@@ -5,11 +5,7 @@
 //  import Image3 from "../../../src/assets/FamLines1.jpg";
 //  import Cards from "./Cards";
  import { Card, Col, Row, } from 'react-bootstrap';
- import { 
-    Switch,
-    Route,
-    Link,
-} from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 
 //  import Content from "../../Content"
  import SiteData from "../../RecipeData";
@@ -29,7 +25,7 @@ const BurgersBody = () => {
                     <Card key={i}>
                         <Row>
                             <Col className="card__img" sm={3}>
-                                <img src={recipe.image} alt="Flower1.jpg"/>
+                                <img src={recipe.headImg} alt="Flower1.jpg"/>
                             </Col>
                             <Col className="card__body">
                                 <div>
@@ -55,27 +51,5 @@ export default BurgersBody
 
 
 
-// <div className="wrapper">
-        //     <h1 className="head">Featured Pages</h1>
-            
-        //     <Cards
-        //         img= {Content[0].image}
-        //         title= {Content[0].title}
-        //         description= {Content[0].description}
-        //      />
-             
-        //      <Cards
-        //         img= {Image2}
-        //         title="Writers"
-        //         description="Learn about the writers of these amazing blogs, and find more of their material."
-        //      />
-             
-        //      <Cards
-        //         img= {Image3}
-        //         title="How ABOUT that!"
-        //         description="A little about the site with a blend of opinions to judge and comment on."
-        //      />
-             
-        
-        // </div>
+
 
