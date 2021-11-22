@@ -24,7 +24,7 @@ function Aside() {
                 <Route path='/Dreams'> {/* First Blog */}
                     <BurgersBody />    {/* BlogSide */}
                 </Route>
-                <Route path='/Oline'> {/* second Blog */}
+                <Route path='/Oliene'> {/* second Blog */}
                     <BurgersBody />   {/* BlogSide */}
                 </Route>
                 <Route path='/third'> {/* third Blog */}
