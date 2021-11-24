@@ -6,10 +6,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 const RecipePage = (props) => {
     // console.log(props);
-    
-    // const { id } = useParams();
-    // need to define "find" in route on App.js
-    // const recipe = InfoBurg.find(recipe =>  (recipe.id).toString() === id);  
+      
     
     return (
         <>

@@ -25,7 +25,7 @@
     
     margin: auto;
     width: 80%;
-    // align-content: center;
+    align-content: center;
 }
 
 // .colorBar {
@@ -34,26 +34,27 @@
 // } 
 .body {
     margin: auto;
-    margin-top: 50;
+    margin: 25px;
     margin-left: center;
     width: 70%;
-    height: 800px;
+    height: auto;
     justify-content: center;
     // display: flex;
     // border: solid black 1px;
   }
 
 .asideContainer {
+    margin: 25px;
     width: 25%;
-    height: 1400px;
-    border: solid black 1px;
+    height: auto;
+    // border: solid black 1px;
     justify-content: center;
 }
 
 .sideContainer {
     margin: 10, 0;
 
-    border: solid rgb(170, 19, 19) 1px;
+    // border: solid rgb(170, 19, 19) 1px;
 }
 
 
@@ -91,6 +92,8 @@ $radius: .5rem;
     min-width: 28rem;
     max-height: 28rem;
     display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
     // flex-direction: column;
     // margin: auto;
     grid-template-rows: 1fr;
@@ -99,16 +102,17 @@ $radius: .5rem;
 
 
     &__img {
-        width: 14rem;
+        width: 100%;
         height: 14rem;
-        object-fit: cover;
+        object-fit: center;
+
         border-radius: $radius;
-        border: solid red 1px;
+        // border: solid red 1px;
         display: flex;
         // margin-left: 8rem;
         // flex-direction: row;
-        // border: solid rgb(160, 157, 157) 1px;
-        // grid-column: .4fr;
+        border: solid rgb(236, 33, 33) 1px;
+        grid-column: .4fr;
 
     }
     &__body {
@@ -116,13 +120,15 @@ $radius: .5rem;
         margin: 0;
         min-width: 14rem;
         flex-grow: 1;
-        border: solid rgb(43, 160, 238) 1px;
+        // border: solid rgb(43, 160, 238) 1px;
         align-items: center;
+        grid-column: .6fr;
         // flex-direction: row;
     }
     &__title {
         line-height: 1.4rem;
         margin-bottom: 0.5rem;
+        // justify-content: center;
     }
     &__description {
         line-height: 1.2rem;
@@ -146,3 +152,23 @@ $radius: .5rem;
         }
     }
 }
+
+// About Page
+.authors {
+    display: grid !important;
+    flex-direction: row;
+    width: 25% !important;
+
+}
+.avatar {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+
+// Footer {
+//     background-image: src="./assets/FooterG.jpg";
+// }

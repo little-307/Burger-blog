@@ -1,14 +1,11 @@
+import React from 'react'
 import { Link } from 'react-router-dom';
-import React, { Component } from 'react';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 
-
-export default class NavbarComp extends Component {
-    render() {
-        return (
-            <>
-            <div className="sticky-nav">
-                <Navbar className="appbar" bg="success" variant="dark" expand="lg" fluid>
+function FooterComp() {
+    return (
+        <div>
+            <Navbar className="footBar" bg="warning" variant="dark" expand="lg" fluid>
                     <Container className="justify-content-center" fluid>
                         <Navbar.Brand as={Link} to={"/"}>Bob's Blogers</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -36,11 +33,8 @@ export default class NavbarComp extends Component {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-            </div>
-            <div>
-           
-            </div>
-            </>
-        )
-    }
+        </div>
+    )
 }
+
+export default FooterComp

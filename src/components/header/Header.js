@@ -17,13 +17,22 @@ function Header() {
                 <Route exact path='/blogs'>
                     <BlogsHead/>
                 </Route>
+                <Route path='/Dreams'>
+                    <BlogsHead/>
+                </Route>
+                <Route path='/Oline'>
+                    <BlogsHead/>
+                </Route>
+                <Route path='/Teddy'>
+                    <BlogsHead/>
+                </Route>
                 <Route path='/about'>
-                        <AboutHead/>
+                    <AboutHead/>
                 </Route>
                 <Route path='/contact'> 
                     <ContactHead/>
                 </Route>
-                <Route path='/burgers'>
+                <Route exact path='/burgers'>
                     <BurgersHead/>
                 </Route>
                 <Route path='/poblano'>

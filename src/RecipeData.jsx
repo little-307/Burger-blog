@@ -77,7 +77,8 @@ let InfoBurg = [
       "1/3 pound Brussels sprouts: thinly sliced",
       "1/4 cup shelled pistachios: roughly chopped",
     ],
-    ingredientsB: ["1 pound ground beef",
+    ingredientsB: [
+      "1 pound ground beef",
       "4 buns",
       "Green leaf lettuce",
       "Sour cream",
