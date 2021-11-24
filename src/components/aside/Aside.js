@@ -20,7 +20,7 @@ function Aside() {
                 <Route path='/Dreams'> {/* First Blog */}
                     <BlogSide />    {/* BlogSide */}
                 </Route>
-                <Route path='/Oliene'> {/* second Blog */}
+                <Route path='/Oline'> {/* second Blog */}
                     <BlogSide />   {/* BlogSide */}
                 </Route>
                 <Route path='/Teddy'> {/* third Blog */}
@@ -37,6 +37,9 @@ function Aside() {
                 </Route>
                 <Route path='/brussel'>
                     <RecipeSide />  {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
+                </Route>
+                <Route exact path='/contact'>
+                    <HomeSide InfoBurg={InfoBurg[0]} BlogData={BlogData[1]}/> 
                 </Route>
             </Switch>
         </div>

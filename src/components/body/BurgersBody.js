@@ -25,7 +25,7 @@ const BurgersBody = () => {
                     <Card key={i}>
                         <Row>
                             <Col className="card__img" sm={3}>
-                                <img src={recipe.headImg} alt="Flower1.jpg"/>
+                                <img src={recipe.image} alt="Flower1.jpg"/>
                             </Col>
                             <Col className="card__body">
                                 <div>

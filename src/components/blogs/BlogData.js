@@ -2,6 +2,10 @@ import TrampHead from "../../assets/TrampHead.jpg";
 import DreamsHead from "../../assets/DreamsHead.jpg";
 import TedLogic from "../../assets/TedLogic.jpg";
 
+import Card1 from "../../assets/Card1.jpeg";
+import Card2 from "../../assets/Card2.jpeg";
+import Card3 from "../../assets/Card3.jpeg";
+
 import AvatarBob from "../../assets/AvatarBob.jpg";
 import AvatarTina from "../../assets/AvatarTina.jpg";
 import Avatar3 from "../../assets/Avatar3.jpg";
@@ -18,10 +22,18 @@ let BlogData = [
     id: 1,
     link: "/Dreams",
     title: "Dreams",
-    date: "November 10, 2021",
+    date: "POSTED: November 10, 2021",
+    episode: "S1-E1: Human Flesh",
     image: DreamsHead,
+    cardImg: Card1,
     author: "Bobcephala",
-    avatarImg: AvatarBob,
+    avatar: AvatarBob,
+    aboutAuthor: [
+      "Favorite Character: Bob! With out a doubt.",
+      "Favorite Show: It's hard to say. I enjoy Rick and Morty, the absurdity of ATHF, and Arrested Development.",
+      "This section has been the hardest to fill with content. I've never thought of building a persona around the writer of a blog under a pseudonym of a screen name like Bobcephala or Aunty Manhands (what was I thinking?).",
+      
+  ],
     voice: "Bob Belcher",
     description: "The Post that started it all. An attempt to write about one of the character's experience during the filming of the first aired episode. Yes, kind of like commentary that would come in the bonus features of Season One DVD Box Set.",
     body: [
@@ -39,17 +51,25 @@ let BlogData = [
     id: 2,
     link: "/Oline",
     title: "A Tramp Named Oliene",
-    date: "Posted: November 17, 2021",
+    episode: "S8-E2: The Silence of Louise",
+    date: "POSTED: November 17, 2021",
     image: TrampHead,
+    cardImg: Card2,
     author: "PonysNBUTTS",
     avatar: AvatarTina,
+    aboutAuthor: [
+      "Favorite Character: A pretty close tie between Tina and Louise, but probably identify with Tina the most.",
+      "Favorite Show: A big fan of Anime, but Bob's Burgers is fun to watch with my Dad. He laughs at some of the dumbest stuff ",
+      "This was a fun assignment my dad gave me. He said this could be a good way to understand a character for future plays I might be in.",
+      
+  ],
     description: "I asked my daughter to help me out with my assignment, and I got excited when her eyes lit up. She did amazing and really got into it. Check it out!",
     voice: "Tina Belcher",
     body: [
         "Hi, I'm Tina and this morning… was weird.  As always, I got dressed and wore my blue Shirt and skirt. It's getting a bit stinky, I wear it all the time. After I got dressed I went downstairs to eat Breakfast. I was confused because Louise was… READING!?",
         "I sat down looking at Louise reading, and Jean looked too. Louise was muttering all the words then said, “A few more pages, I don't think I can take it.” So anyways, I found out that Louise was participating in this thing that if all the students read 500 books total, they get a field trip to this weird water park. My dad doesn't like the idea because of the accidents that happened before. Like the finger in the pool, diarrhea in the pool, and this bad bacteria thing. I want to go because Jimmy Jr. might be there.",
-        "Later at school while I was watching everyone giving their book reports. The janitor and the principal came in freaking out like the time I got scammed out of my favorite toy pony “Chariot”, you know I'm all things pony. So it turns out that we can't go to the waterpark because someone killed the principal's dolls. Why did he have dolls in the first place.. Wait, I have dolls, never mind.",
-        "So everyone went to the principal's room and there the dolls were, yarn and cotton everywhere. Everyone looked shocked, even Louise! So ummm… the water park got canceled. Louise was thinking that we should go to Miley's house because she thought that she could help us. When we got into Miley's room it looked just like Louise's room! Jean and I were sent outside to play on the tramp named “Oliene”. Jean was talking about how worried he was for Louise, but we forgot about that quickly because we loved jumping on “Oliene”.",
+        "Later at school while I was watching everyone giving their book reports. The janitor and the principal came in freaking out like I did that time I got scammed out of my favorite toy pony “Chariot”, you know I'm all things pony. So it turns out that we can't go to the waterpark because someone killed the principal's dolls. Why did he have dolls in the first place.. Wait, I have dolls, never mind.",
+        "So everyone went to the principal's room and there the dolls were, yarn and cotton everywhere. Everyone looked shocked, even Louise! So uhhhhhhhh… the water park got canceled. Louise was thinking that we should go to Miley's house because she thought that she could help us. When we got into Miley's room it looked just like Louise's room! Jean and I were sent outside to play on the tramp named “Oliene”. Jean was talking about how worried he was for Louise, but we forgot about that quickly because we loved jumping on “Oliene”.",
         "After a few days of going to Millie's house to jump on “Oliene”, they found out that it was the Principal! To make this short, we got to go to the water park! Jimmy Jr. was sooooo cute.",
         "❤✔💕😜🎶🍔😸🐴🦄👩‍🦱✨🎨🩱✏🍗🧇🚕🏢",
 
@@ -59,10 +79,18 @@ let BlogData = [
     id: 3,
     link: "/teddy",
     title: "The Next Logical Progression",
-    date: "November 19, 2021",
+    episode: "S2-E5: Food Truckin'",
+    date: "POSTED: November 19, 2021",
     image: TedLogic,
+    cardImg: Card3,
     author: "Aunty Manhands",
-    avatarImg: Avatar3,
+    avatar: Avatar3,
+    aboutAuthor: [
+        "Favorite Character: Any of the supporting characters really. Especially some of those guest spots featuring comedians.",
+        "One of my all time favorite shows has to be Arrested Development.",
+        "I'm what you might consider a 'Troll' in many other sites, but this one is a great outlet and I'm trying not to ruin it for everyone.",
+        
+    ],
     description: "Teddy lets us know about his time during the Food Truck days. Showing how dependant we become with our daily routine.",
     voice: "Teddy",
     body: [
@@ -170,5 +198,19 @@ let InfoBurg = [
     },
   ]
 
+let AboutInfo =[
+  {
+    title: "About Bob’s Blogersorwhatever",
+    body: [
+      "When this BlogPage assignment was first revealed, I’ll be honest. I didn’t just come up with this Idea right away; about the show Bob’s burgers. I’d say it took me the better part of the day to finally land on and go with the Idea. Most of my immediate ideas were way too broad for me to really get into it creatively. I think it was my daughter that came and asked if I wanted to watch an episode of Bob’s Burgers while we had dinner. Of course I said yes, because I needed a mental break from searching blog sites for ideas. Who knew that by not thinking about the project will let you think about the project without all the noise on accident! The intro to the episode was just winding up with the Grand Opening banner when I said out loud “This is it!”.",
+      "I had to laugh when my kids asked what I meant. I felt fired up to get to work, but wanted to enjoy the time with my family and the show, even though I’m sure they were getting annoyed by my pausing the show and talking about the direction I wanted to take the Blog Project. Where they finally had enough was around the time of the Idea of making the blogs written from one specific character,  resembling  the Commentary feature that came in the bonus features on the DVD’s.",
+      "My daughter even helped me out by writing one of the blogs. She did such a great job understanding the concept. You can tell by the end of her blog that she found something more interesting to do like go spend the night at her friend’s house, but she knocked it out of the park. Not too shabby for a fifth grader.",
+      "This project has been filled with challenges that have forced me to really dig deep at times and not give up or just find the easy way out. I’ve grown a lot these past few weeks going through the storm instead of trying to avoid it.",
+    ]
+  }
+]
+
+
+
 // export default BlogData
-export {BlogData,InfoBurg}  // { named } export
+export {BlogData,InfoBurg,AboutInfo}  // { named } export

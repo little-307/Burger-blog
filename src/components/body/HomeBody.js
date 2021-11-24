@@ -12,6 +12,7 @@
 //  import Slider from './Slider';
 
  import Content from "../../Content"
+import { AboutInfo } from "../blogs/BlogData";
 
 // import Card from "../../../node_modules/react-bootstrap/Card";
 // import Button from "../../../node_modules/react-bootstrap/Button";
@@ -40,7 +41,6 @@ const HomeBody = () => {
                     src={C2}
                     alt="Second slide"
                     />
-
                     <Carousel.Caption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -59,8 +59,19 @@ const HomeBody = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-{/* maybe some About information here below the carousel or above. 
-you could even put it in it's own column next to the carousel. */}
+        {/* About The Site  */}
+            <div>
+                <Row>
+                {AboutInfo.map((About, i) => (
+                    <Col>
+                        <h2>{About.title}</h2>
+                        {About.body.map((body,i) => (
+                            <p>{body}</p>
+                        ))}
+                    </Col>
+                ))}
+                </Row>
+            </div>
 
 {/* might not use these cards here on this page, maybe only one blog card used in the carousel */}
                 {Content.map((Blog, i) => (
@@ -81,66 +92,8 @@ you could even put it in it's own column next to the carousel. */}
                 ))}
             </>
        )
-        // <div className="wrapper">
-        //     <h1 className="head">Featured Pages</h1>
-            
-        //     <Cards
-        //         img= {Content[0].image}
-        //         title= {Content[0].title}
-        //         description= {Content[0].description}
-        //      />
-             
-        //      <Cards
-        //         img= {Image2}
-        //         title="Writers"
-        //         description="Learn about the writers of these amazing blogs, and find more of their material."
-        //      />
-             
-        //      <Cards
-        //         img= {Image3}
-        //         title="How ABOUT that!"
-        //         description="A little about the site with a blend of opinions to judge and comment on."
-        //      />
-             
-        
-        // </div>
-
-    
 }
 
 export default HomeBody
 
-// const Cards = (props) => {
-//     return(
-        
-//         <div className="card">
-//             <Row>
-//                 <Col className="card__img" sm={3}>
-//                     <img src={Content[0].image} alt="Flower1.jpg"/>
-//                 </Col>
-//                 <Col className="card__body">
-//                     <div>
-//                         <h4 className="card__title">{Content[0].title} </h4>
-//                         <p className="card__description">{Content[0].description} </p>
-//                         <button className="card__btn">Go There</button>
-//                     </div>
-//                 </Col>
-//             </Row>
-//         </div>
-//    )
-// }
 
-// bootstrap card
-
-// const CardBoot = (props) => {
-//     return(
-//         <Card className="card" style={{ width: '18rem' }}>
-//             <Card.Img className="card__img" variant="top" src={props.img} />
-//             <Card.Body>
-//                 <Card.Title className="card__title">{props.title}</Card.Title>
-//                 <Card.Text className="card__description">{props.description}</Card.Text>
-//                 <Button className="card__btn" variant="primary">GO THERE</Button>
-//             </Card.Body>
-//         </Card>
-//     )
-// }

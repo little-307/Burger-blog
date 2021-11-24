@@ -3,17 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import ScrollUpButton from 'react-scroll-to-top';
 
-import {Switch, Route} from 'react-router-dom';
+
 import Header from './components/header/Header'
 import NavbarComp from './components/NavbarComp';
-import About from './components/about/About';
-import Home from './components/home/Home';
-import Blogs from './components/blogs/Blogs';
 
-import Burgers from './components/body/BurgersBody';
 
 import Body from './components/body/Body';
 import Aside from './components/aside/Aside';
+// import AboutSub from './components/body/AboutSub';
 
 
 
@@ -27,13 +24,17 @@ function App() {
       </header>
       <NavbarComp />
       <div className="appContainer">
-      <Body />
-      <Aside />
+        <Body />
+        <Aside />
       </div>
+      {/* <container className="sub">
+        <AboutSub />
+      </container> */}
   {/* scroll to top goes here */}
       <ScrollUpButton smooth/>
+      <NavbarComp />
   {/* switch goes here */}
-            <Switch>
+            {/* <Switch>
                 <Route exact path="/">
                     <Home />
                 </Route>
@@ -46,7 +47,7 @@ function App() {
                 <Route path="/about">
                     <About />
                 </Route>
-            </Switch>
+            </Switch> */}
       
     </div>
   );

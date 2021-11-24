@@ -5,7 +5,18 @@ const BlogPost = (props) => {
     return(
         <>
         <div className="blogPost">
-        <img src={props.BlogData.image} alt=""/>
+        <Container className="blogHero">
+            <Row>
+                <Col>
+                <img src={props.BlogData.image} alt=""/>
+                </Col>
+                <Col>
+                <img src={props.BlogData.avatar} alt=""/>
+                </Col>
+            
+            </Row>
+        </Container>
+        
         <Container className="description">
             <Row>
                 <Col>
@@ -23,40 +34,22 @@ const BlogPost = (props) => {
             <Row>
                 <Col>
                     <p>{props.BlogData.episode}</p>
+                    <p>{props.BlogData.date}</p>
+                </Col>
+                
+            </Row>
+        </Container>
+        <Container className="blogBody">
+            <Row>
+                <Col>
+                    {props.BlogData.body.map((body, i) => (
+                        <p>{body}</p>
+                   ))}
+                    
                 </Col>
             </Row>
         </Container>
         
-        <Container className="ingredients bg-warning">
-            <Row>
-                <Col> 
-                   {/* {props.InfoBurg.ingredients.map((ingredient, i) => (
-                     <h4>{ingredient}</h4>  
-                   ))} */}
-                    {/* <h4>{props.InfoBurg.ingredients}</h4> */}
-                </Col>
-                <Col>
-                    {/* {props.InfoBurg.ingredientsB.map((ingredient, i) => (
-                     <h4>{ingredient}</h4>  
-                   ))} */}
-                </Col>
-            </Row>
-        </Container>
-        <Container className="instructions">
-            <Row>
-                <Col>
-                    {/* {props.InfoBurg.instructions.map((instruction, i) => (
-                        <h6>{instruction}</h6>
-                        ))} */}
-                    {/* <p>{props.InfoBurg.note}</p> */}
-                    
-                </Col>
-                <Col>
-                    
-                </Col>
-            </Row>
-        </Container>
-
         </div>
         </>
     )

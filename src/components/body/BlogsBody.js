@@ -1,3 +1,4 @@
+
 import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BlogData } from '../blogs/BlogData';
@@ -15,7 +16,7 @@ const BlogsBody = () => {
                         <Card key={i}>
                             <Row>
                                 <Col className="card__img" sm={3}>
-                                    <img src={blog.image} alt="Flower1.jpg"/>
+                                    <img src={blog.cardImg} alt=""/>
                                 </Col>
                                 <Col className="card__body">
                                     <div>

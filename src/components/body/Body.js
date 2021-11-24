@@ -4,9 +4,10 @@ import BlogsBody from './BlogsBody';
 import BlogPost from './BlogPost';
 import BurgersBody from './BurgersBody';
 import AboutBody from './AboutBody';
+import AboutSub from './AboutSub';
 import ContactBody from './ContactBody';
 import RecipePage from './RecipePage';
-import {BlogData, InfoBurg} from '../blogs/BlogData'
+import {BlogData, InfoBurg, AboutInfo} from '../blogs/BlogData'
 // import Burger1 from './Burger1';
 // import Burger2 from './Burger2';
 // import Burger3 from './Burger3';
@@ -17,10 +18,10 @@ const Body = () => {
     console.log(InfoBurg[0].title);
     return (
         <div className="body">
-            <h1>Test</h1>
+            {/* <h1>Test</h1> */}
             <Switch>
                 <Route exact path='/'>
-                    <HomeBody/>
+                    <HomeBody AboutInfo={AboutInfo[0]}/>
                 </Route>
                 <Route exact path='/blogs'>
                     <BlogsBody/>
@@ -28,7 +29,7 @@ const Body = () => {
                 <Route path= '/Dreams'>
                     <BlogPost BlogData={BlogData[0]}/>
                 </Route>
-                <Route path= '/Oliene'>
+                <Route path= '/Oline'>
                     <BlogPost BlogData={BlogData[1]}/>
                 </Route>
                 <Route path= '/Teddy'>
@@ -47,8 +48,17 @@ const Body = () => {
                     <RecipePage InfoBurg={InfoBurg[2]}/>
                 </Route>
                 
-                <Route path='/about'>
-                        <AboutBody/>
+                <Route exact path='/about'>
+                    <AboutBody />
+                </Route>
+                <Route path='/Bobcephala'>
+                    <AboutSub BlogData={BlogData[0]}/>
+                </Route>
+                <Route path='/PonysNBUTTS'>
+                    <AboutSub BlogData={BlogData[1]}/>
+                </Route>
+                <Route path='/Aunty_Manhands'>
+                    <AboutSub BlogData={BlogData[2]}/>
                 </Route>
                 <Route path='/contact'> 
                     <ContactBody/>
