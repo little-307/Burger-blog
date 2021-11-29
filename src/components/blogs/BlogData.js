@@ -6,6 +6,10 @@ import Card1 from "../../assets/Card1.jpeg";
 import Card2 from "../../assets/Card2.jpeg";
 import Card3 from "../../assets/Card3.jpeg";
 
+import RbCard1 from "../../assets/RbCard1.jpeg";
+import RbCard2 from "../../assets/RbCard2.jpeg";
+import RbCard3 from "../../assets/RbCard3.jpeg";
+
 import AvatarBob from "../../assets/AvatarBob.jpg";
 import AvatarTina from "../../assets/AvatarTina.jpg";
 import Avatar3 from "../../assets/Avatar3.jpg";
@@ -49,7 +53,7 @@ let BlogData = [
     },
     {
     id: 2,
-    link: "/Oline",
+    link: "/Oliene",
     title: "A Tramp Named Oliene",
     episode: "S8-E2: The Silence of Louise",
     date: "POSTED: November 17, 2021",
@@ -64,6 +68,7 @@ let BlogData = [
       
   ],
     description: "I asked my daughter to help me out with my assignment, and I got excited when her eyes lit up. She did amazing and really got into it. Check it out!",
+    snipet: "I asked my daughter to help me out with my assignment, and ...",
     voice: "Tina Belcher",
     body: [
         "Hi, I'm Tina and this morning… was weird.  As always, I got dressed and wore my blue Shirt and skirt. It's getting a bit stinky, I wear it all the time. After I got dressed I went downstairs to eat Breakfast. I was confused because Louise was… READING!?",
@@ -111,9 +116,11 @@ let InfoBurg = [
     {
       id: 1,
       image: Poblano,
+      cardImage: RbCard1,
       title: "Poblano Picasso Burger",
       episode: "Season 1, Episode 8: Art Crawl",
       description: " An all-beef patty topped with a spicy poblano salsa verde, fresh tomatoes, and Monterey Jack cheese. A Picasso never tasted so good. I mean, we're assuming his paintings tasted terrible. Anyway, this burger is delicious.",
+      snipet: "A Picasso never tasted so good. I mean, we're assuming his ...",
       servings: "MAKES 4 BURGERS",
       ingredients: [
         "1/4 cup chopped white onions",
@@ -127,7 +134,7 @@ let InfoBurg = [
         "4 slices Monterey Jack cheese",
         "4 bunns",
         "Green leaf lettuce",
-        "1 large tomato:<br> thickly sliced",
+        "1 large tomato: thickly sliced",
       ],
       instructions: [
         "Preheat your broiler",
@@ -142,6 +149,7 @@ let InfoBurg = [
     {
       id: 2,
       image: Bacon,
+      cardImage: RbCard2,
       title: "NEW BACON-INGS BURGER",
       episode: "Season 1, Episode 1: HUMAN FLESH",
       description: "A classic all-beef patty topped with lettuce, cheddar cheese, onion, tomato, and bacon. It's what George Washington was fighting for. It's what the Statue of Liberty wishes it was holding instead of a dumb torch. So use the freshest ingredients you can find, down to the bun.",
@@ -172,6 +180,7 @@ let InfoBurg = [
     {
       id: 3,
       image: Brussel,
+      cardImage: RbCard3,
       title: "DO THE BRUSSEL BURGER",
       episode: "Season 2, Episode 3: SYNCHRONIZED SWIMMING",
       description: "Brussels sprouts. As kids, we hid them in potted plants so we wouldn't have to eat them, and as adults, we love 'em. Life's funny, isn't it? This lightly seasoned bacon burger toped with sauteed sprouts and pistachios will have you 'Doin The Brussel' right at the table.",

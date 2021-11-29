@@ -22,12 +22,12 @@ const BurgersBody = () => {
         return(
             <>
                 {SiteData.map((recipe, i) => (
-                    <Card key={i}>
-                        <Row>
+                    <Card className="burgerCard" key={i}>
+                        <Row className="">
                             <Col className="card__img" sm={3}>
                                 <img src={recipe.image} alt="Flower1.jpg"/>
                             </Col>
-                            <Col className="card__body">
+                            <Col className="burgerCard__body">
                                 <div>
                                     <h4 className="card__title">{recipe.title} </h4>
                                     <p className="card__description">{recipe.description} </p>

@@ -1,15 +1,20 @@
 import Brussel from "./assets/Brussel.jpg";
 import Bacon from "./assets/Bacon.jpg";
 import Poblano from "./assets/PoblanoPicasso.jpg";
+import RbCard1 from "./assets/RbCard1.jpeg";
+import RbCard2 from "./assets/RbCard2.jpeg";
+import RbCard3 from "./assets/RbCard3.jpeg";
 
 
 let InfoBurg = [
   {
     id: 1,
     image: Poblano,
+    cardImg: RbCard1,
     title: "Poblano Picasso Burger",
     episode: "Season 1, Episode 8: Art Crawl",
     description: " An all-beef patty topped with a spicy poblano salsa verde, fresh tomatoes, and Monterey Jack cheese. A Picasso never tasted so good. I mean, we're assuming his paintings tasted terrible. Anyway, this burger is delicious.",
+    snipet: "A Picasso never tasted so good. I mean, we're assuming his ...",
     servings: "MAKES 4 BURGERS",
     ingredients: [
       "1/4 cup chopped white onions",
@@ -23,7 +28,7 @@ let InfoBurg = [
       "4 slices Monterey Jack cheese",
       "4 bunns",
       "Green leaf lettuce",
-      "1 large tomato:<br> thickly sliced",
+      "1 large tomato: thickly sliced",
     ],
     instructions: [
       "Preheat your broiler",
@@ -38,9 +43,11 @@ let InfoBurg = [
   {
     id: 2,
     image: Bacon,
+    cardImg: RbCard2,
     title: "NEW BACON-INGS BURGER",
     episode: "Season 1, Episode 1: HUMAN FLESH",
     description: "A classic all-beef patty topped with lettuce, cheddar cheese, onion, tomato, and bacon. It's what George Washington was fighting for. It's what the Statue of Liberty wishes it was holding instead of a dumb torch. So use the freshest ingredients you can find, down to the bun.",
+    snipet: "It's what George Washington was fighting for. It's what the Statue of Liberty wishes...",
     servings: "MAKES 4 BURGERS, PLUS PLENTY OF FRIES",
     ingredients: [
       "1 pound bacon",
@@ -68,9 +75,11 @@ let InfoBurg = [
   {
     id: 3,
     image: Brussel,
+    cardImg: RbCard3,
     title: "DO THE BRUSSEL BURGER",
     episode: "Season 2, Episode 3: SYNCHRONIZED SWIMMING",
     description: "Brussels sprouts. As kids, we hid them in potted plants so we wouldn't have to eat them, and as adults, we love 'em. Life's funny, isn't it? This lightly seasoned bacon burger toped with sauteed sprouts and pistachios will have you 'Doin The Brussel' right at the table.",
+    snipet: "Brussels sprouts. As kids, we hid them in potted plants so ...",
     servings: "MAKES 4 BURGERS",
     ingredients: [
       "1/2 pound bacon",

@@ -29,7 +29,7 @@ const Body = () => {
                 <Route path= '/Dreams'>
                     <BlogPost BlogData={BlogData[0]}/>
                 </Route>
-                <Route path= '/Oline'>
+                <Route path= '/Oliene'>
                     <BlogPost BlogData={BlogData[1]}/>
                 </Route>
                 <Route path= '/Teddy'>

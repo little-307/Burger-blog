@@ -3,11 +3,6 @@ import { Switch, Route } from 'react-router'
 import {BlogData, InfoBurg} from '../blogs/BlogData'
 
 import HomeSide from './HomeSide'
-// import BlogsBody from '../body/BlogsBody'
-import BurgersBody from '../body/BurgersBody'
-
-// import InfoBurg from '../../RecipeData'
-
 import BlogSide from './BlogSide'
 import RecipeSide from './RecipeSide'
 
@@ -26,7 +21,7 @@ function Aside() {
                     <BlogSide />    {/* BlogSide */}
                 </Route>
                 <Route path='/Oliene'> {/* second Blog */}
-                    <BurgersBody />   {/* BlogSide */}
+                    <BlogSide />   {/* BlogSide */}
                 </Route>
                 <Route path='/Teddy'> {/* third Blog */}
                     <BlogSide />   {/* BlogSide */}
@@ -42,6 +37,9 @@ function Aside() {
                 </Route>
                 <Route path='/brussel'>
                     <RecipeSide />  {/* RecipeSide (bootstrap style cards same info as BurgerBody) */}
+                </Route>
+                <Route exact path='/about'>
+                    <HomeSide InfoBurg={InfoBurg[0]} BlogData={BlogData[1]}/> 
                 </Route>
                 <Route exact path='/contact'>
                     <HomeSide InfoBurg={InfoBurg[0]} BlogData={BlogData[1]}/> 

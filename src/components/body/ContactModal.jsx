@@ -12,15 +12,14 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Confirmed
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
+          <h4>Thank You for reaching out</h4>
           <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            Your email and message has been received. You will hear back pretty soon.
+            After all, we are still very small and by we I mean me.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -36,7 +35,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
+          SUBMIT
         </Button>
   
         <MyVerticallyCenteredModal

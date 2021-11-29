@@ -1,4 +1,5 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import {Link} from 'react-router-dom';
 
  import Image from "../../../src/assets/Flower1.jpg"; 
  import Image2 from "../../../src/assets/Flower2.jpg";
@@ -31,8 +32,8 @@ const HomeBody = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>maybe blank</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3></h3>
+                    <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -42,8 +43,8 @@ const HomeBody = () => {
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3></h3>
+                    <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -52,18 +53,17 @@ const HomeBody = () => {
                     src={C3}
                     alt="Third slide"
                     />
-
                     <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3></h3>
+                    <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
         {/* About The Site  */}
-            <div>
+             <div>  {/*Center this */}
                 <Row>
                 {AboutInfo.map((About, i) => (
-                    <Col>
+                    <Col className="homeText">
                         <h2>{About.title}</h2>
                         {About.body.map((body,i) => (
                             <p>{body}</p>
@@ -84,7 +84,7 @@ const HomeBody = () => {
                                 <div>
                                     <h4 className="card__title">{Blog.title} </h4>
                                     <p className="card__description">{Blog.description} </p>
-                                    <button className="card__btn">Go There</button>
+                                    <button className="card__btn"><Link to={Blog.link}>I Want To Go To There</Link></button>
                                 </div>
                             </Col>
                         </Row>

@@ -21,7 +21,7 @@ const BlogPost = (props) => {
             <Row>
                 <Col>
                     <p>{props.BlogData.description}</p>
-                    {/* <p>{props.BlogData.servings}</p> */}
+                   
                 </Col>
             </Row>
         </Container>
@@ -34,7 +34,7 @@ const BlogPost = (props) => {
             <Row>
                 <Col>
                     <p>{props.BlogData.episode}</p>
-                    <p>{props.BlogData.date}</p>
+                    <p>{props.BlogData.date} BY: {props.BlogData.author}</p>
                 </Col>
                 
             </Row>

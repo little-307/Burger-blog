@@ -1,10 +1,10 @@
 import React from 'react';
-import BurgerNav from '../../assets/BurgerNav.jpg';
+import HomeHead2 from '../../assets/HomeHead2.jpg';
 
 function HomeHead() {
     return (
         <div className="header">
-            <img src={BurgerNav} alt=""/>
+            <img src={HomeHead2} alt=""/>
         </div>
     )
 }

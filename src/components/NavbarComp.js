@@ -8,7 +8,7 @@ export default class NavbarComp extends Component {
         return (
             <>
             <div className="sticky-nav">
-                <Navbar className="appbar" bg="success" variant="dark" expand="lg" fluid>
+                <Navbar className="appbar" bg="dark" variant="dark" expand="lg" fluid>
                     <Container className="justify-content-center" fluid>
                         <Navbar.Brand as={Link} to={"/"}>Bob's Blogers</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -21,11 +21,10 @@ export default class NavbarComp extends Component {
                             <Nav.Link as={Link} to={"/blogs"}>BLOGS</Nav.Link>
                             <Nav.Link as={Link} to={"/burgers"}>BURGERS</Nav.Link>
                             <NavDropdown title="SIDES" id="navbarScrollingDropdown">
-                            <NavDropdown.Item as={Link} to={"/writers"}>WRITERS</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to={"/about"}>ABOUT</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">
-                                Something else here
+                                Coming Soon?
                             </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link as={Link} to={"./contact"}>
